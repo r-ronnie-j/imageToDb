@@ -10,10 +10,6 @@ router.get("/",async (req,res)=>{
 
 router.post('/', (req, res) => {
   const { name, profile } = req.body;
-  console.log(name)
-  console.log(profile)
-
-  // Create a new User document using the User model
   const newUser = new User({ name, profile });
 
   // Save the user to the database
